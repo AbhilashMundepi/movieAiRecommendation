@@ -37,7 +37,7 @@ async function recommendMovies(text) {
     model: "gemini-2.5-flash",
     systemInstruction: `
       You are a movie recommendation expert.
-      Suggest 3 to 5 movies based on user preference.
+      Suggest 3 to 5 movies based on user preference,emotions and mood.
       Return ONLY movie names separated by commas.
       No explanation.
     `
