@@ -34,7 +34,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 async function recommendMovies(text) {
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.5-flash",
+    model: "gemini-1.5-flash",
     systemInstruction: `
       You are a movie recommendation expert.
       Suggest 3 to 5 movies based on user preference.
